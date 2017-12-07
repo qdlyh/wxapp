@@ -1,0 +1,75 @@
+.goods-text-box {
+  padding: 20px;
+  background: #fff;
+  height: 65px;
+  p {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      float: left;
+      strong {
+        color: #FE0303;
+        font-size: 17px;
+      }
+      i {
+        font-size: 12px;
+        color: #555555;
+        text-decoration: line-through;
+        padding-left: 10px;
+      }
+      .goods-text-box-coupon {
+        display: inline-block;
+        background: rgb(241, 58, 58);
+        padding: 2px;
+        color: #fff;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    .goods-text-box-right {
+      float: right;
+      color: #555555;
+    }
+  }
+}
+
+.goods-img-box {
+  padding: 10px;
+  height: 20px;
+  background: #fff;
+  color: #555555;
+  margin-top: 10px;
+  .goods-img-text {
+    display: flex;
+    justify-content: space-between;
+    p {
+      padding-left: 10px;
+    }
+    i {
+      font-size: 25px;
+      line-height: 20px;
+    }
+  }
+}
+
+.goods-img {
+  max-width: 750px;
+  img {
+    max-width: 750px;
+    vertical-align: bottom;
+  }
+}
+
+
+.you-like-text {
+  color: rgb(116, 116, 116);
+}
+
+.footerBtn {
+  margin-top: 65px;
+}

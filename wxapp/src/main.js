@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import '@/components/css/swiper.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import BScroll from 'better-scroll'
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 

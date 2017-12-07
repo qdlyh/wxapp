@@ -48,7 +48,7 @@
         </router-link>
       </span>
     </div>
-    <div class="text">
+    <div class="you-like-text">
       <p>————&nbsp;&nbsp;&nbsp;❤精品推荐&nbsp;&nbsp;&nbsp;————</p>
     </div>
     <corlist></corlist>
@@ -56,21 +56,29 @@
 </template>
 
 <script>
+  import {
+    swiper,
+    swiperSlide
+  } from 'vue-awesome-swiper'
   import corlist from '@/components/common/corlist'
   export default {
     components: {
-      corlist
+      corlist,
+      swiper,
+      swiperSlide
     },
     data() {
       return {
         swiperOption: {
           loop: true,
           autoplay: {
+            disableOnInteraction: false,
             stopOnLastSlide: true,
           },
           // 如果需要分页器
           pagination: {
             el: '.swiper-pagination',
+            clickable:true,
           },
           // 如果需要前进后退按钮
           // navigation: {
