@@ -5,6 +5,12 @@ import goods from '@/components/goods'
 import goodsList from '@/components/goodsList'
 import faq from '@/components/faq'
 import video from '@/components/video'
+import seekText from '@/components/seekText'
+import goodsVideo from '@/components/goodsVideo'
+import classify from '@/components/classify'
+import flashsale from '@/components/flashsale'
+import headpage from '@/components/common/headpage'
+
 Vue.use(Router)
 
 export default new Router({
@@ -23,6 +29,11 @@ export default new Router({
       name: 'goodsList',
       component: goodsList
     },
+      {
+      path: '/goodsVideo',
+      name: 'goodsVideo',
+      component: goodsVideo
+    },
     {
       path: '/faq',
       name: 'faq',
@@ -33,5 +44,22 @@ export default new Router({
       name: 'video',
       component: video
     },
+    {
+      path: '/seekText',
+      name: 'seekText',
+      component: seekText
+    },
+    {
+      path: '/classify',
+      component: classify
+    },
+    {
+      path: '/flashsale',
+      component: flashsale
+    },
+    {
+      path:'/headpage',
+      component: headpage
+    }
   ]
 })

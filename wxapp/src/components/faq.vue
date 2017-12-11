@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="faq-img">
-      <img src="./images/165165156.jpg">
+      <img src="../images/165165156.jpg">
     </div>
     <div class="faq-text-box" v-for="(list,index) in faq" :key="index">
       <router-link to="path">
@@ -79,7 +79,7 @@
       height: 40px;
       border-bottom: 1px solid #000;
       i {
-        font-size: 25px;
+        font-size: 24px;
         line-height: 20px;
         color: rgb(116, 116, 116);
       }

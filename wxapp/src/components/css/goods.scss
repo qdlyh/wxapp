@@ -1,46 +1,53 @@
 .goods-text-box {
-  padding: 20px;
+  padding: 20px 0px;
   background: #fff;
-  height: 65px;
-  p {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  ul {
-    margin-top: 20px;
-    li {
-      float: left;
-      strong {
-        color: #FE0303;
-        font-size: 17px;
-      }
-      i {
-        font-size: 12px;
-        color: #555555;
-        text-decoration: line-through;
-        padding-left: 10px;
-      }
-      .goods-text-box-coupon {
-        display: inline-block;
-        background: rgb(241, 58, 58);
-        padding: 2px;
-        color: #fff;
-        font-size: 12px;
-        margin-left: 10px;
-      }
+  display: inline-block;
+  width: 100%;
+  .goods-text-content {
+    padding: 0 25px;
+    p {
+      font-size: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
-    .goods-text-box-right {
-      float: right;
-      color: #555555;
+    ul {
+      margin-top: 20px;
+      li {
+        float: left;
+        strong {
+          color: #FE0303;
+          font-size: 32px;
+        }
+        i {
+          font-size: 24px;
+          color: #555555;
+          text-decoration: line-through;
+          padding: 8px 0 0 10px;
+          display: inline-block;
+        }
+        .goods-text-box-coupon {
+          display: inline-block;
+          background: rgb(241, 58, 58);
+          padding: 5px;
+          color: #fff;
+          font-size: 24px;
+          margin-left: 10px;
+        }
+      }
+      .goods-text-box-right {
+        float: right;
+        color: #555555;
+        font-size: 24px;
+        padding-top: 5px;
+        display: inline-block;
+      }
     }
   }
 }
 
 .goods-img-box {
-  padding: 10px;
-  height: 20px;
+  padding: 15px;
   background: #fff;
   color: #555555;
   margin-top: 10px;
@@ -48,11 +55,12 @@
     display: flex;
     justify-content: space-between;
     p {
+      font-size: 28px;
       padding-left: 10px;
     }
     i {
-      font-size: 25px;
-      line-height: 20px;
+      font-size: 28px;
+      padding-right: 20px;
     }
   }
 }
@@ -60,16 +68,27 @@
 .goods-img {
   max-width: 750px;
   img {
-    max-width: 750px;
+    width: 100%;
     vertical-align: bottom;
   }
 }
 
+//轮播点击视频按钮
+.videoBtn {
+  position: absolute;
+  top: 430px;
+  right: 5%;
+  z-index: 99;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .you-like-text {
   color: rgb(116, 116, 116);
 }
 
 .footerBtn {
-  margin-top: 65px;
+  margin-top: 110px;
 }
